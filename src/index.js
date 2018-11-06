@@ -12,7 +12,7 @@ import StackForm from './components/StackForm';
 
 const store = createStore(rootReducer);
 store.subscribe(() => console.log('store: ', store.getState()));
-store.dispatch(setStack({ id: 0, title: 'butts', cards: [] }));
+store.dispatch(setStack({ id: 0, title: 'Cards', cards: [] }));
 
 ReactDOM.render(
     <Provider store={store}>
