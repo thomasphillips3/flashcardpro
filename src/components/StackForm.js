@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import { addStack } from '../actions';
 import { Form, FormGroup, FormControl, ControlLabel, syncButton, Button } from 'react-bootstrap';
 
-class StackForm extends Component {
+export class StackForm extends Component {
     constructor() {
         super();
 
