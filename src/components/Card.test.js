@@ -18,6 +18,8 @@ const card = {
 
 const props = { card }
 
+
+
 describe('Card', () => {
     const card = shallow(<Card {...props} />)
 
@@ -28,7 +30,7 @@ describe('Card', () => {
 
     describe('clicking the card', () => {
         beforeEach(() => {
-            card.simulate('click');
+            card.find('div').at(0).simulate('click');
         });
 
         it('reveals the answer', () => {
